@@ -4,14 +4,15 @@
 
 function setup() {
   createCanvas(640, 240);
-  textFont("Arial");
+  textFont("Courier New");
 }
 
 function draw() {
   background(200);
   textSize(16);
-  text("one small step for a man ...", 20, 60);
+  text("Who is she ... ?", 20, 60);
+  if (mouseIsPressed == true) {
+    text(". . . A mystic memory.", 20, 160); 
+  }
   textSize(32);
-  text("one giant leap for mankind.", 20, 160);
-
 }
